@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Home - Isma Portfolio</title>
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/6/w3.css">
+  <style>
+    * {
+      box-sizing: border-box
+    }
+
+    body {
+      margin: 0;
+      background: #160d10;
+      color: #f5e4d4;
+      font-family: Georgia, serif
+    }
+
+    .sidebar {
+      width: 220px;
+      height: 100%;
+      position: fixed;
+      background: #28131b
+    }
+
+    .sidebar h2 {
+      text-align: center;
+      color: #ee9589;
+      letter-spacing: 5px;
+      padding: 20px
+    }
+
+    .sidebar a {
+      color: #f5e4d4;
+      padding: 16px;
+      letter-spacing: 2px
+    }
+
+    .sidebar a:hover,
+    .active {
+      background: #e98f83 !important;
+      color: #28131b !important
+    }
+
+    .content {
+      margin-left: 220px
+    }
+
+    .hero {
+      min-height: 650px;
+      padding: 45px;
+      background: linear-gradient(120deg, #28131b, #160d10)
+    }
+
+    .hero h1 {
+      color: #ee9589;
+      font-size: clamp(65px, 12vw, 150px);
+      font-weight: bold;
+      line-height: .9
+    }
+
+    .hero h2 {
+      color: #ee9589
+    }
+
+    .hero p {
+      line-height: 1.8
+    }
+
+    .hero img {
+      width: 100%;
+      max-width: 350px;
+      height: 380px;
+      object-fit: cover;
+      border: 4px solid #e98f83;
+      border-radius: 180px 180px 0 0
+    }
+
+    .intro {
+      padding: 40px;
+      background: #ee9589;
+      color: #28131b;
+      text-align: center
+    }
+
+    footer {
+      padding: 25px;
+      background: #28131b;
+      color: #ee9589;
+      text-align: center
+    }
+
+    @media(max-width:700px) {
+      .sidebar {
+        width: 100%;
+        height: auto;
+        position: relative
+      }
+
+      .sidebar a {
+        display: inline-block;
+        padding: 10px;
+        font-size: 12px
+      }
+
+      .content {
+        margin-left: 0
+      }
+
+      .hero {
+        padding: 25px
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <div class="w3-sidebar w3-bar-block sidebar">
+    <h2>ISMA.</h2>
+    <p class="w3-center">PERSONAL PORTFOLIO</p>
+    <a href="index.html" class="w3-bar-item w3-button active">✦ HOME</a>
+    <a href="about-me.html" class="w3-bar-item w3-button">✦ ABOUT ME</a>
+    <a href="data-diri.html" class="w3-bar-item w3-button">✦ DATA DIRI</a>
+    <a href="pengalaman.html" class="w3-bar-item w3-button">✦ PENGALAMAN</a>
+  </div>
+
+  <div class="content">
+    <div class="hero">
+      <p>WELCOME TO MY PERSONAL WEBSITE</p>
+      <h1>PORTFOLIO</h1>
+
+      <div class="w3-row-padding">
+        <div class="w3-half">
+          <img src="foto.jpg" alt="Foto Isma">
+        </div>
+
+        <div class="w3-half">
+          <h2>ISMA JAHRATUNNISA</h2>
+          <p>MAHASISWA ENJINERING</p>
+          <p>
+            Selamat datang di website portfolio saya.
+            Website ini berisi informasi mengenai data diri,
+            pendidikan, pengalaman, dan kemampuan yang saya miliki.
+          </p>
+          <p>CREATIVE PERSONAL PORTFOLIO 2026</p>
+          <a href="about-me.html" class="w3-button" style="background:#ee9589;color:#28131b">
+            EXPLORE MY PORTFOLIO ✦
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <div class="intro">
+      <h2>LET'S CREATE SOMETHING GREAT</h2>
+      <p>Belajar, Berkembang, dan Berkarya untuk Masa Depan.</p>
+    </div>
+
+    <footer>
+      <h3>ISMA JAHRATUNNISA</h3>
+      <p>PERSONAL PORTFOLIO 2026 ✦</p>
+    </footer>
+  </div>
+</body>
+
+</html>

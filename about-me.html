@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>About Me - Isma Portfolio</title>
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/6/w3.css">
+  <style>
+    * {
+      box-sizing: border-box
+    }
+
+    body {
+      margin: 0;
+      background: #160d10;
+      color: #f5e4d4;
+      font-family: Georgia, serif
+    }
+
+    .sidebar {
+      width: 220px;
+      height: 100%;
+      position: fixed;
+      background: #28131b
+    }
+
+    .sidebar h2 {
+      text-align: center;
+      color: #ee9589;
+      letter-spacing: 5px;
+      padding: 20px
+    }
+
+    .sidebar a {
+      color: #f5e4d4;
+      padding: 16px;
+      letter-spacing: 2px
+    }
+
+    .sidebar a:hover,
+    .active {
+      background: #e98f83 !important;
+      color: #28131b !important
+    }
+
+    .content {
+      margin-left: 220px
+    }
+
+    .header {
+      padding: 50px 35px;
+      background: #28131b
+    }
+
+    .header h1 {
+      color: #ee9589;
+      font-size: clamp(50px, 9vw, 100px)
+    }
+
+    .header p {
+      letter-spacing: 3px
+    }
+
+    .about {
+      padding: 40px;
+      background: #f5e4d4;
+      color: #28131b
+    }
+
+    .about h2 {
+      color: #984d55
+    }
+
+    .about p {
+      line-height: 1.9
+    }
+
+    .cards {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 15px;
+      padding: 30px
+    }
+
+    .card {
+      padding: 25px;
+      background: #28131b;
+      border-left: 5px solid #ee9589
+    }
+
+    .card h3 {
+      color: #ee9589
+    }
+
+    .highlight {
+      padding: 40px;
+      background: #ee9589;
+      color: #28131b;
+      text-align: center
+    }
+
+    footer {
+      padding: 25px;
+      text-align: center;
+      background: #28131b;
+      color: #ee9589
+    }
+
+    @media(max-width:700px) {
+      .sidebar {
+        width: 100%;
+        height: auto;
+        position: relative
+      }
+
+      .sidebar a {
+        display: inline-block;
+        padding: 10px;
+        font-size: 12px
+      }
+
+      .content {
+        margin-left: 0
+      }
+
+      .cards {
+        grid-template-columns: 1fr
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <div class="w3-sidebar w3-bar-block sidebar">
+    <h2>ISMA.</h2>
+    <p class="w3-center">PERSONAL PORTFOLIO</p>
+    <a href="index.html" class="w3-bar-item w3-button">✦ HOME</a>
+    <a href="about-me.html" class="w3-bar-item w3-button active">✦ ABOUT ME</a>
+    <a href="data-diri.html" class="w3-bar-item w3-button">✦ DATA DIRI</a>
+    <a href="pengalaman.html" class="w3-bar-item w3-button">✦ PENGALAMAN</a>
+  </div>
+
+  <div class="content">
+
+    <div class="header">
+      <p>WELCOME TO MY WORLD ✦</p>
+      <h1>ABOUT ME</h1>
+      <p>GET TO KNOW ME BETTER</p>
+    </div>
+
+    <div class="about">
+      <h2>HELLO, I'M ISMA JAHRATUNNISA</h2>
+      <h3>Mahasiswa Enjinering</h3>
+      <p>
+        Saya merupakan seorang mahasiswa Enjinering yang
+        memiliki minat dalam bidang teknologi dan desain.
+        Saya senang mempelajari hal baru, mengembangkan
+        kreativitas, serta meningkatkan kemampuan untuk
+        mempersiapkan masa depan.
+      </p>
+      <p>
+        Melalui website portfolio ini, saya ingin
+        memperkenalkan diri, pendidikan, pengalaman,
+        dan kemampuan yang saya miliki.
+      </p>
+    </div>
+
+    <h2 class="w3-padding">MY INTERESTS ✦</h2>
+
+    <div class="cards">
+      <div class="card">
+        <h3>01 — TEKNOLOGI</h3>
+        <p>Tertarik mempelajari perkembangan teknologi dan dunia digital.</p>
+      </div>
+
+      <div class="card">
+        <h3>02 — DESAIN</h3>
+        <p>Menyukai kreativitas dan pembuatan desain yang menarik.</p>
+      </div>
+
+      <div class="card">
+        <h3>03 — KOMUNIKASI</h3>
+        <p>Senang berinteraksi dan bertukar ide dengan orang lain.</p>
+      </div>
+
+      <div class="card">
+        <h3>04 — PENGEMBANGAN DIRI</h3>
+        <p>Selalu berusaha meningkatkan kemampuan dan pengalaman.</p>
+      </div>
+    </div>
+
+    <div class="highlight">
+      <h2>MY MOTIVATION</h2>
+      <p>Terus belajar, jangan takut mencoba, dan selalu berusaha menjadi lebih baik.</p>
+    </div>
+
+    <footer>
+      <h3>ISMA JAHRATUNNISA</h3>
+      <p>PERSONAL PORTFOLIO 2026 ✦</p>
+    </footer>
+
+  </div>
+</body>
+
+</html>

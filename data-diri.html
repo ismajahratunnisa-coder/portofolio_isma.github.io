@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Data Diri - Isma Portfolio</title>
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/6/w3.css">
+  <style>
+    * {
+      box-sizing: border-box
+    }
+
+    body {
+      margin: 0;
+      background: #160d10;
+      color: #f5e4d4;
+      font-family: Georgia, serif
+    }
+
+    .sidebar {
+      width: 220px;
+      height: 100%;
+      position: fixed;
+      background: #28131b
+    }
+
+    .sidebar h2 {
+      text-align: center;
+      color: #ee9589;
+      letter-spacing: 5px;
+      padding: 20px
+    }
+
+    .sidebar a {
+      color: #f5e4d4;
+      padding: 16px;
+      letter-spacing: 2px
+    }
+
+    .sidebar a:hover,
+    .active {
+      background: #e98f83 !important;
+      color: #28131b !important
+    }
+
+    .content {
+      margin-left: 220px
+    }
+
+    .top {
+      min-height: 500px;
+      padding: 35px;
+      background: linear-gradient(120deg, #28131b, #160d10)
+    }
+
+    .small-text {
+      letter-spacing: 3px;
+      font-size: 11px;
+      color: #e9aaa0
+    }
+
+    .hero-title {
+      font-size: clamp(65px, 12vw, 150px);
+      line-height: .9;
+      font-weight: bold;
+      color: #ee9589;
+      margin: 35px 0
+    }
+
+    .hero-layout {
+      display: grid;
+      grid-template-columns: 1.1fr .9fr;
+      gap: 30px;
+      align-items: center
+    }
+
+    .hero-photo {
+      width: 100%;
+      height: 350px;
+      object-fit: cover;
+      object-position: center 25%;
+      border-radius: 180px 180px 0 0;
+      border: 3px solid #e98f83
+    }
+
+    .hero-info h2 {
+      color: #ee9589
+    }
+
+    .hero-info p {
+      line-height: 1.8
+    }
+
+    .section-title {
+      padding: 20px 30px;
+      border-bottom: 1px solid #75434b;
+      letter-spacing: 3px
+    }
+
+    .biodata {
+      padding: 25px;
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 15px
+    }
+
+    .data-card {
+      min-height: 125px;
+      padding: 22px;
+      background: #28131b;
+      border: 1px solid #75434b;
+      border-left: 5px solid #ee9589
+    }
+
+    .data-card h4 {
+      color: #ee9589;
+      font-size: 13px;
+      letter-spacing: 2px
+    }
+
+    .data-card p {
+      font-size: 19px;
+      color: #f5e4d4
+    }
+
+    .highlight {
+      background: #ee9589;
+      color: #28131b;
+      padding: 35px;
+      text-align: center
+    }
+
+    .highlight p {
+      line-height: 1.8
+    }
+
+    .bottom {
+      padding: 35px;
+      background: #28131b
+    }
+
+    .bottom h2 {
+      color: #ee9589
+    }
+
+    footer {
+      padding: 25px;
+      text-align: center;
+      background: #ee9589;
+      color: #28131b
+    }
+
+    @media(max-width:700px) {
+      .sidebar {
+        width: 100%;
+        height: auto;
+        position: relative
+      }
+
+      .sidebar a {
+        display: inline-block;
+        padding: 10px;
+        font-size: 12px
+      }
+
+      .content {
+        margin-left: 0
+      }
+
+      .hero-layout {
+        grid-template-columns: 1fr
+      }
+
+      .biodata {
+        grid-template-columns: 1fr
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <div class="w3-sidebar w3-bar-block sidebar">
+    <h2>ISMA.</h2>
+    <p class="w3-center">PERSONAL PORTFOLIO</p>
+    <a href="index.html" class="w3-bar-item w3-button">✦ HOME</a>
+    <a href="about-me.html" class="w3-bar-item w3-button">✦ ABOUT ME</a>
+    <a href="data-diri.html" class="w3-bar-item w3-button active">✦ DATA DIRI</a>
+    <a href="pengalaman.html" class="w3-bar-item w3-button">✦ PENGALAMAN</a>
+  </div>
+
+  <div class="content">
+
+    <div class="top">
+      <p class="small-text">PERSONAL PROFILE & CREATIVE PORTFOLIO</p>
+      <h1 class="hero-title">PROFILE</h1>
+
+      <div class="hero-layout">
+        <div>
+          <img src="foto.jpg" class="hero-photo" alt="Foto Isma Jahratunnisa">
+        </div>
+
+        <div class="hero-info">
+          <p class="small-text">HELLO, NICE TO MEET YOU</p>
+          <h2>ISMA JAHRATUNNISA</h2>
+          <p>
+            Mahasiswa Enjinering yang memiliki ketertarikan
+            dalam bidang teknologi dan desain. Saya senang
+            belajar, mencoba hal baru, dan mengembangkan
+            kemampuan diri.
+          </p>
+          <p class="small-text">BASED IN JAKARTA, INDONESIA</p>
+        </div>
+      </div>
+    </div>
+
+    <h3 class="section-title">01 — PERSONAL INFORMATION ✦</h3>
+
+    <div class="biodata">
+
+      <div class="data-card">
+        <h4>NAMA LENGKAP</h4>
+        <p>Isma Jahratunnisa</p>
+      </div>
+
+      <div class="data-card">
+        <h4>TEMPAT, TANGGAL LAHIR</h4>
+        <p>Jakarta, 04 Agustus 2006</p>
+      </div>
+
+      <div class="data-card">
+        <h4>JENIS KELAMIN</h4>
+        <p>Perempuan</p>
+      </div>
+
+      <div class="data-card">
+        <h4>ALAMAT</h4>
+        <p>Jakarta</p>
+      </div>
+
+      <div class="data-card">
+        <h4>NO. HANDPHONE</h4>
+        <p>081234567899</p>
+      </div>
+
+      <div class="data-card">
+        <h4>EMAIL</h4>
+        <p>ismajahratunnisa@gmail.com</p>
+      </div>
+
+      <div class="data-card">
+        <h4>PENDIDIKAN</h4>
+        <p>Mahasiswa Enjinering</p>
+      </div>
+
+      <div class="data-card">
+        <h4>BIDANG MINAT</h4>
+        <p>Teknologi dan Desain</p>
+      </div>
+
+      <div class="data-card">
+        <h4>PENGALAMAN</h4>
+        <p>Magang PKL Selama 6 Bulan</p>
+      </div>
+
+      <div class="data-card">
+        <h4>KEAHLIAN</h4>
+        <p>Komunikasi dan Kerja Sama</p>
+      </div>
+
+    </div>
+
+    <div class="highlight">
+      <h2>MY PERSONALITY ✦</h2>
+      <p>
+        Saya adalah pribadi yang memiliki semangat untuk belajar,
+        bertanggung jawab, disiplin, kreatif, dan mampu bekerja
+        sama dengan orang lain. Saya selalu berusaha
+        mengembangkan kemampuan dan pengalaman untuk masa depan.
+      </p>
+    </div>
+
+    <div class="bottom">
+      <p class="small-text">LET'S CREATE A BETTER FUTURE</p>
+      <h2>THANK YOU FOR VISITING MY PROFILE.</h2>
+      <p>Personal Portfolio — Isma Jahratunnisa</p>
+    </div>
+
+    <footer>
+      <h3>ISMA JAHRATUNNISA</h3>
+      <p>PERSONAL PORTFOLIO 2026 ✦</p>
+    </footer>
+
+  </div>
+</body>
+
+</html>
